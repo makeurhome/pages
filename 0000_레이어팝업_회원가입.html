@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>우리집</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="subject" content="woorizip" />
+
+
+	<link rel="stylesheet" type="text/css" href="./css/common/base.css" />
+	<link rel="stylesheet" type="text/css" href="./css/common/layout.css" />
+	<link rel="stylesheet" type="text/css" href="./css/common/content.css" />
+
+
+
+	<script src="./js/common/jquery-1.12.4.js" type="text/javascript"></script>
+	<script src="./js/common/jquery-ui.js" type="text/javascript"></script>
+	<script src="./js/common/slick.js" type="text/javascript"></script>
+ 	 <script src="./js/common/common.js" type="text/javascript"></script> 
+
+<script type="text/javascript">
+	//<!--
+	$(function(){ 
+		$( "a.lalenatese6" ).click(function() {
+  		alert( "Handler for .click() called." );
+});
+	});
+     //-->
+</script>
+
+</head>
+<body>
+<ul id="quickNavigation">
+        <li><a href="#contents">본문내용 바로가기</a></li>
+</ul>
+<div id="wrapper_main">
+
+	
+
+	<div id="container">
+
+		
+		<header id="header">
+
+		
+			<!-- nav_area -->
+			<nav id="nav_area">
+
+
+
+
+				<div id="top_menu">
+					<div class="top">
+						<div class="global_btn">
+							<a href="#bookmark" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://lalena.net');">시작페이지 추가</a>
+							<a href="#addFavorite" onclick="addFavorite();return false;">즐겨찾기 추가</a>
+						</div>
+
+						<div class="global_util">
+							<div class="global_user"><em>홍길동</em> 님, 반갑습니다.</div>
+							<div class="global_top">
+
+
+
+
+
+
+
+
+								<span class="btn_logout"><a href="#layer" class="layer_popup_dro01">로그인</a></span>
+							<span class="btn_logout"><a href="#layer" class="layer_popup_dro02">약관동의</a></span>
+							<span class="btn_logout"><a href="#layer" class="layer_popup_dro03">회원가입</a></span>
+							<span class="btn_logout"><a href="#layer" class="layer_popup_dro04">회원가입_카카오톡</a></span>
+							<span class="btn_logout"><a href="#layer" class="layer_popup_dro05">회원가입 페이스북</a></span>
+							<span class="btn_logout"><a href="#layer" class="layer_popup_dro06">회원가입 완료</a></span>
+
+
+
+
+
+<!-- 
+						
+								<span class="global_top_alert"><a href="#">알림<i>6</i></a></span>
+
+									<div class="global_top_alert_v">
+										<div class="global_top_alert_tit">알림 <a href="#" class="btn_allread">모두 읽음으로 표시</a></div>
+										<ul class="alert_list">
+											<li><a href="#" class="alert_01"><span class="fwb">내 매물</span>을 찜 했습니다.</a></li>
+											<li><a href="#" class="alert_02"><span class="fwb">계약만기 전 매물</span>이 있습니다.</a></li>
+											<li><a href="#" class="alert_03"><span class="fwb">공지사항</span>이 있습니다.</a></li>
+											<li><a href="#" class="alert_04"><span class="fwb">암행어사</span>가 출두했습니다.</a></li>
+											<li><a href="#" class="alert_05"><span class="fwb">공동중개 매물</span>정보를 도착했습니다.</a></li>
+											
+										</ul>
+									</div>
+
+								<span class="global_top_attchk"><a href="#">출석체크</a></span>
+
+									<div class="global_top_attchk_v">
+										<div class="g_t_att_v_tit">출석체크</div>
+										<div class="g_t_att_v_con">
+											<em>출석체크</em>가 완료되었습니다.<br>
+											<em class="g_t_att_v_con_point">현재포인트 : <i>50</i>포인트</em>
+											<a href="#" class="btn_close">출석체크 닫기</a>
+										</div>
+									</div>
+
+								<span class="global_top_setting"><a href="#">설정</a></span>
+
+									<div class="global_top_setting_v">
+										<a href="#">관심목록</a>
+										<a href="#">알림설정</a>
+										<a href="#" class="btn_blue">정보수정</a>
+										 <a href="#" class="btn_close">설정 닫기</a> 
+									</div>
+
+								<span class="btn_logout"><a href="#">로그아웃</a></span> -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--// end of top_menu -->
+
+
+
+
+
+
+				<div id="head_area">
+					<div class="head_gnb">
+						<h1><a href="#"><img src="./image/common/logo.png" alt="우리집" /></a></h1>
+						<div id="gnb">
+							<ul>
+								<li class="on"><a href="#">분양</a></li>
+								<li><a href="#">찾기</a></li>
+								<li><a href="#">내놓기</a></li>
+								<li><a href="#">공동중개</a></li>
+								<li><a href="#">내 정보</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!--// end of head_area -->
+
+
+			</nav>
+			<!--// nav_area -->
+
+
+
+
+
+
+
+
+
+
+
+		</header>
+
+
+		<!-- 컨텐츠 -->
+		<div id="contents">
+
+
+
+			<h2>공지사항</h2>
+			<ul class="content_tab tab_three ">
+				<li><a href="#">자주묻는질문</a></li>
+				<li><a href="#">1:1문의</a></li>
+				<li><a href="#" class="active">공지사항</a></li>
+			</ul>
+
+			<div id="content">
+
+
+
+
+
+
+
+				<div class="tbl_vertical mgt35">
+
+					<table>
+						<caption>공지사항</caption>
+						<colgroup>
+							<col style="width:%">
+							<col style="width:214px">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">제목</th>
+								<th scope="col">날짜</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="tal "><a href="#" >[공지사항] 우리집 주요 서비스 개인정보 처리방침 주요 개정 사항 (수정)</a></td>
+								<td>2019.12.12</td>
+							</tr>
+							<tr>
+								<td class="tal "><a href="#">교육안내 공지입니다</a></td>
+								<td>2019.12.12</td>
+							</tr>
+							<tr>
+								<td class="tal "><a href="#">교육안내 공지입니다</a></td>
+								<td>2019.12.12</td>
+							</tr>
+						</tbody>
+					</table>
+
+				</div>
+
+
+
+
+
+
+				<div class="paginate mt20">
+					<div>
+							<a href="#none" class="pg_prev"><em>처음</em></a>
+							<a href="#none" class="pg_prev2"><em>이전</em></a>
+							<a href="#none" class="on"><span>1</span></a>
+							<a href="#none"><span>2</span></a>
+							<a href="#none"><span>3</span></a>
+							<a href="#none"><span>4</span></a>
+							<a href="#none"><span>5</span></a>
+							<a href="#none" class="pg_next"><em>다음</em></a>
+							<a href="#none" class="pg_next2"><em>마지막</em></a>
+					</div>
+				</div>
+
+
+
+
+
+
+
+				<!-- 레이어팝업 로그인-->
+					<div class="layerpop_area " id="layer_popup_dro01" style="width:430px">
+						<div class="layerpop_tit">로그인</div>
+						<span class="ui-button-icon ui-icon ui-icon-closethick btn_close layer_popup_dro01_close"></span>
+						<div class="layerpop_content">
+							
+						
+								<div class="btn_area w365 m0auto">
+									<a href="#" class="btn_blue btnw50_per fl">개인회원</a>
+									<a href="#" class="btn_white btnw50_per fr">중계사무실</a>
+								</div>
+
+
+
+								<fieldset class="login_area " style="display: block;">
+									<legend>개인회원 로그인</legend>
+
+
+									<div class="login_inputs">
+										<input type="text" name="" id="" placeholder="아이디" title="아이디">
+										<input type="password" name="" id="" placeholder="비밀번호" title="비밀번호">
+
+
+										<div class="login_btns">
+											<a href="#login" class="fl"><input type="checkbox" name="" id="input_findid"><label for="input_findid">아이디 저장</label> </a>
+											<a href="#login" class="fr">비밀번호 찾기</a>
+										</div>
+
+
+
+										<a href="#login" class="btn_login">로그인</a>
+									</div>
+
+									
+
+									<div class="login_sns_btns">
+										<a href="#" class="btn_kakao fl">카카오톡으로 시작</a>
+										<a href="#" class="btn_facebook fr">페이스북으로 시작</a>
+									</div>
+									<div class="login_join_btn_area mgt40 pdb40 tac">아직 회원이 아니세요? <a href="#" class="fblue">이메일로 회원가입</a></div>
+								</fieldset>
+
+
+
+
+						
+
+						<!-- 	<div class="btn_area">
+								<a href="#close" class="btn_gray layer_close1">닫기</a>
+
+							</div> -->
+
+						</div>
+					</div>
+					<!--// 레이어팝업 -->
+
+
+
+				<!-- 레이어팝업 약관동의-->
+					<div class="layerpop_area " id="layer_popup_dro02" style="width:550px">
+						<div class="layerpop_tit tal">약관동의</div>
+						<span class="ui-button-icon ui-icon ui-icon-closethick btn_close layer_popup_dro02_close"></span>
+						<div class="layerpop_content">
+							
+							
+
+									<div class="agreement_area">
+										<h4>이용약관 동의 <em>(필수)</em></h4>
+
+										<div class="agreement_cont">
+											이용약관 내용
+										</div>
+										<div class="agreement_txt">
+											<input type="checkbox" name="" id="agree_dong1"> <label for="agree_dong1">동의합니다.</label>
+										</div>
+												
+
+							
+										<h4>개인정보 수집 및 이용에 대한  동의 <em>(필수)</em></h4>
+
+										<div class="agreement_cont">
+											개인정보 내용
+										</div>
+										<div class="agreement_txt">
+											<input type="checkbox" name="" id="agree_dong2"> <label for="agree_dong2">동의합니다.</label>
+										</div>		
+
+							
+										<h4>마케팅 정보 수신에 대한  동의 <em>(선택)</em></h4>
+
+										<div class="agreement_cont">
+											마케팅 정보 수신 내용
+										</div>
+										<div class="agreement_txt">
+											<input type="checkbox" name="" id="agree_dong2"> <label for="agree_dong2">동의합니다.</label>
+										</div>
+
+
+										<div class="agreement_all">
+											<input type="checkbox" id="agree_all"> <label for="agree_all"  class="fblue">모두 동의합니다.</label>
+										</div>
+
+
+										<div class="btn_area mgt20">
+											<a href="#" class="btn_blue">확인</a>
+										</div>
+
+
+									</div>
+
+						
+
+
+						</div>
+					</div>
+					<!--// 레이어팝업 -->
+
+
+
+				<!-- 레이어팝업 회원가입-->
+					<div class="layerpop_area " id="layer_popup_dro03" style="width:630px">
+						<div class="layerpop_tit tal"> 회원가입</div>
+						<span class="ui-button-icon ui-icon ui-icon-closethick btn_close"></span>
+						<div class="layerpop_content">
+							
+						
+
+							<div class="join_area">
+
+								<input type="radio" id="join_chk_perso1" name="join_chk_perso" checked="checked"> <label for="join_chk_perso1" class="f_000 fweb">개인회원</label>
+								<input type="radio" id="join_chk_perso2" name="join_chk_perso" class="mgl10"> <label for="join_chk_perso2" class="f_000 fweb"> 컨설회원</label>
+								
+								<div class="tbl_horizontal mgt15   ">
+
+
+									<table>
+										<caption>회원가입</caption>
+										<colgroup>
+											<col style="width:100px">
+											<col style="">
+
+										</colgroup>
+										<tbody>
+											<tr>
+												<th scope="row"><label for="input_whewonsa">이름</label></th>
+												<td>
+													<input type="text" name="" id="input_whewonsa">
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">이메일</th>
+												<td>
+													<input type="text" name=""  title="이메일주소 앞자리" class="w50per"> @ 
+													<select title="이메일주소 뒷자리" class="w40per">
+														<option>선택해주세요</option>
+													</select>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row"><label for="input_bimilbunho1">비밀번호</label></th>
+												<td>
+													<input type="password" name="" id="input_bimilbunho1" placeholder="비밀번호를 입력하세요">
+												</td>
+											</tr>
+											<tr>
+												<th scope="row"><label for="input_bimilbunho2">비밀번호 확인</label></th>
+												<td>
+													<input type="password" name="" id="input_bimilbunho2" placeholder="비밀번호를 입력하세요">
+													
+												</td>
+											</tr>
+											<tr>
+												<th scope="row"><label for="input_woopyunbunho">휴대폰 번호</label></th>
+												<td>
+													<select name="" id="" title="휴대전화 앞자리">
+														<option value="">010</option>
+													</select>
+													-
+													<input type="text" name="" id="" maxlength="4" class="w20per" title="휴대전화 가운데자리" maxlength="4">
+													-
+													<input type="text" name="" id="" maxlength="4" class="w20per" title="휴대전화 마지막자리" maxlength="4">
+													<a href="#" class="btn_white_blue">인증번호 요청</a>
+
+
+													<div class="mgt12">
+														<input type="text" name="" id="input_whewonsa"  class="w63per" >
+														<a href="#" class="btn_white_blue">인증번호 확인</a>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+
+
+									<div class="add_pic_area">
+										<p>명함사진을 등록해주세요</p>
+										<a href="#" class="btn_black_round">사진등록</a>
+									</div>
+
+
+
+
+									
+
+								</div>
+
+								<div class="btn_area mgt20">
+									<a href="#" class="btn_blue">확인</a>
+								</div>
+
+							</div>
+
+
+
+						</div>
+					</div>
+					<!--// 레이어팝업 -->
+
+
+
+
+
+		<!-- 레이어팝업 회원가입_카카오톡-->
+					<div class="layerpop_area " id="layer_popup_dro04" style="width:630px">
+						<div class="layerpop_tit tal"> 회원가입</div>
+						<span class="ui-button-icon ui-icon ui-icon-closethick btn_close"></span>
+						<div class="layerpop_content">
+							
+						
+
+							<div class="join_area">
+
+								
+								
+								<div class="tbl_horizontal mgt15   ">
+
+
+									<table>
+										<caption>회원가입</caption>
+										<colgroup>
+											<col style="width:100px">
+											<col style="">
+
+										</colgroup>
+										<tbody>
+											<tr>
+												<th scope="row">이메일</th>
+												<td>
+													<input type="text" name=""  title="이메일주소 앞자리" class="w50per"> @ 
+													<select title="이메일주소 뒷자리" class="w40per">
+														<option>선택해주세요</option>
+													</select>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row"><label for="input_woopyunbunho">휴대폰 번호</label></th>
+												<td>
+													<select name="" id="" title="휴대전화 앞자리">
+														<option value="">010</option>
+													</select>
+													-
+													<input type="text" name="" id="" maxlength="4" class="w20per" title="휴대전화 가운데자리" maxlength="4">
+													-
+													<input type="text" name="" id="" maxlength="4" class="w20per" title="휴대전화 마지막자리" maxlength="4">
+													<a href="#" class="btn_white_blue">인증번호 요청</a>
+
+
+													<div class="mgt12">
+														<input type="text" name="" id="input_whewonsa"  class="w63per" >
+														<a href="#" class="btn_white_blue">인증번호 확인</a>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+		
+
+								</div>
+
+								<div class="btn_area mgt20">
+									<a href="#" class="btn_kakao">카카오계정으로 회원가입</a>
+								</div>
+
+							</div>
+
+
+
+						</div>
+					</div>
+					<!--// 레이어팝업 -->
+
+
+
+		<!-- 레이어팝업 회원가입_페이스북-->
+					<div class="layerpop_area " id="layer_popup_dro05" style="width:630px">
+						<div class="layerpop_tit tal"> 회원가입</div>
+						<span class="ui-button-icon ui-icon ui-icon-closethick btn_close"></span>
+						<div class="layerpop_content">
+							
+						
+
+							<div class="join_area">
+
+								
+								<div class="tbl_horizontal mgt15   ">
+
+
+									<table>
+										<caption>회원가입</caption>
+										<colgroup>
+											<col style="width:100px">
+											<col style="">
+
+										</colgroup>
+										<tbody>
+											<tr>
+												<th scope="row">이메일</th>
+												<td>
+													<input type="text" name=""  title="이메일주소 앞자리" class="w50per"> @ 
+													<select title="이메일주소 뒷자리" class="w40per">
+														<option>선택해주세요</option>
+													</select>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row"><label for="input_woopyunbunho">휴대폰 번호</label></th>
+												<td>
+													<select name="" id="" title="휴대전화 앞자리">
+														<option value="">010</option>
+													</select>
+													-
+													<input type="text" name="" id="" maxlength="4" class="w20per" title="휴대전화 가운데자리" maxlength="4">
+													-
+													<input type="text" name="" id="" maxlength="4" class="w20per" title="휴대전화 마지막자리" maxlength="4">
+													<a href="#" class="btn_white_blue">인증번호 요청</a>
+
+
+													<div class="mgt12">
+														<input type="text" name="" id="input_whewonsa"  class="w63per" >
+														<a href="#" class="btn_white_blue">인증번호 확인</a>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+
+		
+
+								</div>
+
+								<div class="btn_area mgt20">
+									<a href="#" class="btn_facebook">페이스북계정으로 회원가입</a>
+								</div>
+
+							</div>
+
+
+
+						</div>
+					</div>
+					<!--// 레이어팝업 -->
+
+
+
+					<!-- 레이어팝업 회원가입_완료-->
+					<div class="layerpop_area " id="layer_popup_dro06" style="width:620px">
+						<div class="layerpop_tit tal"> 회원가입 완료</div>
+						<span class="ui-button-icon ui-icon ui-icon-closethick btn_close"></span>
+						<div class="layerpop_content">
+							
+							
+							<div class="mgt10">
+										<div class="join_complete">
+										<p>회원가입이 완료되었습니다.</p>
+
+									</div>
+
+
+
+					
+								
+
+							</div>
+
+						
+
+						</div>
+					</div>
+					<!--// 레이어팝업 -->
+
+
+
+
+
+			</div><!--// end of content -->
+
+
+
+
+
+
+
+
+		</div><!--// end of contents -->
+
+
+
+		<footer id="footer">
+			<div id="foot">
+				<ul class="foot_t">
+					<li><a href="#">회사소개</a></li>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#">고객지원</a></li>
+					<li><a href="#">서비스이용가이드</a></li>
+					<li><a href="#">파트너</a></li>
+				</ul>
+
+				<ul class="foot_sns">
+					<li><a href="#" target="_blank" title="새창열림"><img src="./image/common/sns1.png" alt="네이버카페"></a></li>
+					<li><a href="#" target="_blank" title="새창열림"><img src="./image/common/sns2.png" alt="유튜브"></a></li>
+					<li><a href="#" target="_blank" title="새창열림"><img src="./image/common/sns3.png" alt="블로그"></a></li>
+				</ul>
+
+
+				<div class="foot_b">
+					<div class="foot_logo"><img src="./image/common/foot_logo.png" alt="우리집 로고"></div>
+					<div class="foot_info">
+						<p>대표 : 홍길동         <span class="foot_line"> 주소 : <span class="address">서울시 서초구 서초대로 301 동익 성봉빌딩 11층</span></span></p>
+						<p>고객센터 : 02-1588-0000          <span class="foot_line">팩스번호 : 02-000-0000</span></p>
+						<p>사업자번호 : 000-00-00000          <span class="foot_line">프로모션/사업 제휴문의 : <a href="mailto:aaa@aaa.com">aaa@aaa.com</a></span>          <span class="foot_line">통신판매업신고번호 : 제2018-서울 강남-00000호</span></p>
+						<p>COPYRIGHT ⓒ 2019 By WOORIZIP. ALL RIGHTS RESERVED.</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+		<div class="quick_m" id="gotop">
+			<ul>
+				<li class="quick_m_quick1"><a href="#">일대일문의</a></li>
+				<li class="quick_m_naverblog"><a href="#" target="_blank" title="새창열림">네이버블로그 </a></li>
+				<li class="quick_m_youtube"><a href="#" target="_blank" title="새창열림">YouTube</a></li>
+				<li class="quick_m_navercafe"><a href="#" target="_blank" title="새창열림">네이버카페</a></li>
+				<li class="quick_m_top"><a href="#container" title="상단으로 이동">TOP</a></li>
+			</ul>
+		</div>
+
+
+
+
+	</div><!--// end of container -->
+
+
+
+
+
+
+
+
+
+
+
+</div><!--// end of wrapper_main -->
+
+
+
+</body>
+</html>
